@@ -1,0 +1,21 @@
+This repository is a dump of many of the code snippets used in the Big Data NLP talk at KDD in 2016. Feel free to reach out to us with questions, improvements, or suggestions.
+
+Here's a list of modules we'll be using in ipython notebooks. This will function with any Operating System.
+
+Install Python 2.7 and some module dependencies 
+    pip install ipython nltk networkx zss datasketch agglomcluster
+    # This is slow, the wordnet dependency is large consider downloading after talk
+    python -e "import nltk; nltk.download(punkt); nltk.download(wordnet)"
+
+Stanford parser (bash commands -- very large, consider downloading after talk):
+    wget http://nlp.stanford.edu/software/stanford-corenlp-full-2015-12-09.zip
+    unzip stanford-corenlp-full-2015-12-09.zip
+
+    git clone https://github.com/brendano/stanford_corenlp_pywrapper
+    cd stanford_corenlp_pywrapper
+    pip install .
+    cd ..
+
+Code using these modules:
+https://github.com/MSeal/kdd2016
+
